@@ -14,7 +14,7 @@ import java.util.List;
 
 public class DialogTest {
     //---------------------总体---------------------------------
-    JFrame jFrame = new JFrame("平行空间车载网络性能测试系统");
+    JFrame jFrame = new JFrame("基于平行空间车载网络性能测试系统");
     Box box = new Box(BoxLayout.Y_AXIS);
     //---------------------------------------------------------
 
@@ -123,7 +123,7 @@ public class DialogTest {
     Integer il = 0;
     //组装界面
     public void init(){
-        msgArea.setText("平行空间车载网络性能计算系统\n");
+        msgArea.setText("基于平行空间车载网络性能计算系统\n");
         //----------------------菜单栏------------------------------
         fileMenu.add(openItem);
         fileMenu.add(exitItem);
@@ -465,7 +465,7 @@ public class DialogTest {
                 timer.start();
             }
         });
-        bottomRight.add(ExportButton);
+        //bottomRight.add(ExportButton);
         ExportButton.addActionListener(event -> {
             if(timer.isRunning() || timeLabel.getText() == "0.0"){
                 //弹出警告框
